@@ -2,16 +2,243 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 570
+  ClientWidth = 296
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Label1: TLabel
-    Position.X = 216.000000000000000000
-    Position.Y = 88.000000000000000000
-    Text = 'Label1'
-    TabOrder = 1
+  object rect_bg_login: TRectangle
+    Align = Contents
+    Fill.Color = claWhite
+    Size.Width = 296.000000000000000000
+    Size.Height = 570.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object top_login: TLayout
+      Align = Top
+      Size.Width = 296.000000000000000000
+      Size.Height = 105.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object rect_bg_top_login: TRectangle
+        Align = Client
+        Fill.Color = xFFFBFBFB
+        Size.Width = 296.000000000000000000
+        Size.Height = 105.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object lbl_nome_empresa_login: TLabel
+          Align = Center
+          AutoSize = True
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 175.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 32.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'INSS R'#225'pido'
+          TabOrder = 0
+        end
+      end
+    end
+    object bottom_login: TLayout
+      Align = Bottom
+      Position.Y = 496.000000000000000000
+      Size.Width = 296.000000000000000000
+      Size.Height = 74.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object rect_bg_bottom_login: TRectangle
+        Align = Client
+        Fill.Color = xFFFBFBFB
+        Size.Width = 296.000000000000000000
+        Size.Height = 74.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object rect_btn_fale_conosco: TRectangle
+          Align = Center
+          Fill.Color = xFFFBFBFB
+          Size.Width = 209.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object lbl_btn_fale_conosco: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 70.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claGray
+            TextSettings.WordWrap = False
+            Text = 'Fale Conosco'
+            TabOrder = 0
+          end
+        end
+      end
+    end
+    object content_login: TLayout
+      Align = Client
+      Size.Width = 296.000000000000000000
+      Size.Height = 391.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object grid_content_login: TGridPanelLayout
+      Align = Client
+      Size.Width = 296.000000000000000000
+      Size.Height = 391.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      ColumnCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = area_2_content_login
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = area_1_content_login
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object area_2_content_login: TLayout
+        Align = Center
+        Size.Width = 241.000000000000000000
+        Size.Height = 183.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edt_cpf_login: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          TextSettings.Font.Size = 22.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 19.000000000000000000
+          Padding.Left = 15.000000000000000000
+          Margins.Left = 15.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = ' CPF'
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object edt_senha_login: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          TextSettings.Font.Size = 22.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 59.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = ' Senha'
+          StyledSettings = [Family, Style, FontColor]
+        end
+        object rect_btn_entrar: TRectangle
+          Fill.Color = claGray
+          Position.X = 16.000000000000000000
+          Position.Y = 102.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          object lbl_btn_entrar: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = []
+            Locked = True
+            Size.Width = 48.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Times New Roman'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.WordWrap = False
+            Text = 'Entrar'
+            TabOrder = 0
+          end
+        end
+        object RectAnimation1: TRectAnimation
+          Duration = 0.200000002980232200
+        end
+        object rect_btn_cadastrar: TRectangle
+          Fill.Color = claWhite
+          Position.X = 16.000000000000000000
+          Position.Y = 141.000000000000000000
+          Size.Width = 209.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Label4: TLabel
+            Align = Center
+            AutoSize = True
+            StyledSettings = [Family]
+            Locked = True
+            Size.Width = 63.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.FontColor = claGray
+            TextSettings.WordWrap = False
+            Text = 'Cadastre-se'
+            TabOrder = 0
+          end
+        end
+      end
+      object area_1_content_login: TLayout
+        Align = Center
+        Size.Width = 241.000000000000000000
+        Size.Height = 183.500000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object rect_area_video: TRectangle
+          Align = Center
+          Fill.Color = claWhite
+          Size.Width = 241.000000000000000000
+          Size.Height = 142.000000000000000000
+          Size.PlatformDefault = False
+          object lbl_area_video: TLabel
+            Align = Center
+            AutoSize = True
+            Size.Width = 31.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'V'#237'deo'
+            TabOrder = 0
+          end
+        end
+        object lbl_quem_somos_login: TLabel
+          Align = Top
+          AutoSize = True
+          Size.Width = 241.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          TextSettings.WordWrap = False
+          Text = 'Quem Somos'
+          TabOrder = 1
+        end
+      end
+    end
   end
 end
