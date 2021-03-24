@@ -1,9 +1,11 @@
-object Form1: TForm1
+object FrmLogin: TFrmLogin
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 570
-  ClientWidth = 296
+  ClientHeight = 480
+  ClientWidth = 300
+  Fill.Kind = Solid
+  Position = MainFormCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -11,21 +13,21 @@ object Form1: TForm1
   object rect_bg_login: TRectangle
     Align = Contents
     Fill.Color = claWhite
-    Size.Width = 296.000000000000000000
-    Size.Height = 570.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     Stroke.Kind = None
     object top_login: TLayout
       Align = Top
-      Size.Width = 296.000000000000000000
-      Size.Height = 105.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 57.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object rect_bg_top_login: TRectangle
         Align = Client
         Fill.Color = xFFFBFBFB
-        Size.Width = 296.000000000000000000
-        Size.Height = 105.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 57.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
         object lbl_nome_empresa_login: TLabel
@@ -44,16 +46,16 @@ object Form1: TForm1
     end
     object bottom_login: TLayout
       Align = Bottom
-      Position.Y = 496.000000000000000000
-      Size.Width = 296.000000000000000000
-      Size.Height = 74.000000000000000000
+      Position.Y = 440.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 40.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       object rect_bg_bottom_login: TRectangle
         Align = Client
         Fill.Color = xFFFBFBFB
-        Size.Width = 296.000000000000000000
-        Size.Height = 74.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
         object rect_btn_fale_conosco: TRectangle
@@ -81,15 +83,15 @@ object Form1: TForm1
     end
     object content_login: TLayout
       Align = Client
-      Size.Width = 296.000000000000000000
-      Size.Height = 391.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 383.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
     end
     object grid_content_login: TGridPanelLayout
       Align = Client
-      Size.Width = 296.000000000000000000
-      Size.Height = 391.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 383.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
       ColumnCollection = <
@@ -128,13 +130,12 @@ object Form1: TForm1
         TabOrder = 0
         object edt_cpf_login: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
           TabOrder = 1
           TextSettings.Font.Size = 22.000000000000000000
-          Position.X = 16.000000000000000000
-          Position.Y = 19.000000000000000000
           Padding.Left = 15.000000000000000000
-          Margins.Left = 15.000000000000000000
-          Size.Width = 209.000000000000000000
+          Margins.Bottom = 15.000000000000000000
+          Size.Width = 241.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
           TextPrompt = ' CPF'
@@ -142,11 +143,11 @@ object Form1: TForm1
         end
         object edt_senha_login: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
           TabOrder = 0
           TextSettings.Font.Size = 22.000000000000000000
-          Position.X = 16.000000000000000000
-          Position.Y = 59.000000000000000000
-          Size.Width = 209.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 241.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
           TextPrompt = ' Senha'
@@ -189,7 +190,8 @@ object Form1: TForm1
           Size.Height = 33.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
-          object Label4: TLabel
+          OnClick = rect_btn_cadastrarClick
+          object lblCadastre_se: TLabel
             Align = Center
             AutoSize = True
             StyledSettings = [Family]

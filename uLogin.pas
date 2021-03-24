@@ -9,7 +9,7 @@ uses
   FMX.Objects;
 
 type
-  TForm1 = class(TForm)
+  TFrmLogin = class(TForm)
     rect_bg_login: TRectangle;
     top_login: TLayout;
     bottom_login: TLayout;
@@ -23,7 +23,6 @@ type
     lbl_btn_entrar: TLabel;
     RectAnimation1: TRectAnimation;
     rect_btn_cadastrar: TRectangle;
-    Label4: TLabel;
     area_1_content_login: TLayout;
     rect_area_video: TRectangle;
     lbl_area_video: TLabel;
@@ -32,6 +31,8 @@ type
     lbl_btn_fale_conosco: TLabel;
     rect_bg_top_login: TRectangle;
     rect_bg_bottom_login: TRectangle;
+    lblCadastre_se: TLabel;
+    procedure rect_btn_cadastrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,10 +40,17 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FrmLogin: TFrmLogin;
 
 implementation
 
 {$R *.fmx}
+
+uses Biblioteca, uCadastroUsuario;
+
+procedure TFrmLogin.rect_btn_cadastrarClick(Sender: TObject);
+begin
+   AbriTela(TFrmCadUsuario,FrmCadUsuario);
+end;
 
 end.

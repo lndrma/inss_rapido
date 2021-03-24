@@ -3,12 +3,14 @@ program INSS_Rapido;
 uses
   System.StartUpCopy,
   FMX.Forms,
-  uLogin in 'uLogin.pas' {Form1};
+  uLogin in 'uLogin.pas' {FrmLogin},
+  uCadastroUsuario in 'uCadastroUsuario.pas' {FrmCadUsuario},
+  Biblioteca in 'Biblioteca.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
-  Application.Run;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  application.Run;
 end.

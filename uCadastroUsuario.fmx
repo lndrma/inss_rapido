@@ -1,0 +1,314 @@
+object FrmCadUsuario: TFrmCadUsuario
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 300
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rect_ToolBar_Top: TRectangle
+    Align = Top
+    Fill.Color = xFFEDEDED
+    Sides = [Bottom]
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.500000000000000000
+    object img_Voltar: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap = <
+        item
+          Width = 128
+          Height = 128
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+            CB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            025449444154785EEDDD676E1441148551034B616D04DB9B20E760831039A7BD
+            B028C36DB0250BD54885CB427AD5E7489F087FEF33023CD3B305000000000000
+            00000000009475EEF0474EE6493A9F7EFCFE15ABF234FD3C6C77F90DD663F9CA
+            3F1ADF11AC4C6BFCA3761213DB4FADE18FE70826D533FED241720493D94BADB1
+            37B51CC1766202FF3AFE518E60028F536BDCDE9E258A1A1DFF793A9328E8516A
+            8DDA9BF10B1B1DFF45327E510F536BD4DE5E26E31765FC157B905AA3F6F62A19
+            BF28E3AFD8FDD41AB537E317363AFEEB64FCA2EEA5D6A8BDBD49C62FCAF82B76
+            37B546EDED6D327E51A3E3BF4B671305DD49AD517B337E61C65FB1DBA9356A6F
+            EF93F18B1A1DFF43327E51B7526BD4DE8C5FD8E8F81F93F18BBA995AA3F666FC
+            C246C7FF948C5FD48DD41AB537E317363AFEE764FCA2AEA7D6A8BD19BFB0D1F1
+            BF24E317752DB546ED6D19DFD3518A1A1DFF6B327E5157536BD4DEBE25E31765
+            FC15BB925AA3F666FCC246C7FF9E8CBFC11AFE19E4357C13F0A700FE12882320
+            FC47108E80D3F966902328CE1130FC8210DF169E802360F845A15E1D340147C0
+            F01B43BC4278028E80E137877A97D0041C01C30F88F04EE1093802861F12E569
+            211370040C3F28D243A326E008187E58B42398C0691C81979D1737FA81119E1F
+            3C0147C0F08746798CFC041C01C31F1CE9A36426E00818FEF0689F283681D123
+            583E4798E24E7A0407E94262027BA935F2A696F12F2626D27B04CBF8971213DA
+            4FADD18F5AC6BF9C98D8A62358C6DF4EACC093F4F701EC2456E4F811187FA596
+            23D8FDF353000000000000000000000080FF696BEB177D7D765362E94B2F0000
+            000049454E44AE426082}
+          FileName = 'C:\OUTROS\DELPHI MOBILE\INSS RAPIDO\trunk\images\volta_128.png'
+        end>
+      Align = Left
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = img_VoltarClick
+    end
+    object img_Salvar: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap = <
+        item
+          Width = 128
+          Height = 128
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+            CB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            053A49444154785EEDDD098875631CC7F1B1EFFB16B284848494501221640FA1
+            100A258594424A9648912492122221429425C952B6B2858444222164DFF9FEEA
+            9D4CE3FFDEB9779EFF73EFB9CFF97DEB93B7E99D7BCE79DE993B77CEFC9F31E3
+            9C73CE39E79C73CE39E79C73CE39E79C73CE39E79C73CE39E79C73CE39E79C73
+            CE39E79C73AE6F2DB3E4BFAE7E9D5AEB3DF01AFEC61BD81DAE4E7BE22D68ADB5
+            E6135FEB7DF113FE99E347E8ED2EB7FDF133E6AEB5D67E1F4CA40330FF8466FD
+            8283E0723A14BF225A6BFD1BE88363AC1D8CA59DD0ACDF71145C59C7E00F446B
+            3C6BAC9F7087E337442732DF9F38016E719D84BF10ADED7CFA37D13345D58EC6
+            421F8DF3E905CB6970A37506B476D19A2E8D9E758F44958E833EA3A3030FE36C
+            B8E13A17D11A0E439FA0FAB291DA8918F6A968900BE0067711A2B51B853E518F
+            474AFA681AF5A968904BE19B46FF4F6B7205A2355B0C7DC2A6BC08FF08D1014A
+            5C037F10FC97D6E23A446B55E27D1437EC2BFE51DD8865D1F7B40637235AA352
+            BA2957DC83881E3CC36D580E7D6D79DC81686D32DC83E2D6C5AB880E904127B9
+            02FAD68AB80FD19A6478096B23A5B5F002A2036578082BA12FAD8C4710AD4586
+            67B106525B0D4F233A6086C7B12A5A4FD7F824A235C8F004AAADE32A780CD181
+            333C83F48FDC0EB5269E4374ED191E46F567527DED7A00D109647811695FBB3A
+            945E4BBD8CE89A33DC8BB1BD96D2ABD7BB109D48060D3BAC8F56DA001A9689AE
+            35C3ED18FB77533AE0AD884E28C3DBD818D3DE267817D13566B80913BB9FA203
+            DF80E8C432E84ED66698D6B6C08788AE2DC3B598F81D559DC055884E30C3C7D8
+            0AD3D636F804D13565B80C9DB99DAE13B904D18966F80CDB615ADA019F23BA96
+            0C17A2939D8FE884337C899DD0F576C15788AE21C339E87467213AF10CDF6037
+            74358D697F8BE8DC4BE947F2A7632A3A0519032491EFB117BAD6DEF801D13997
+            D25A6A2867AAD2444AC908D9209A87DF0F5D69D0887CA92A235EE3EA08D49A27
+            D058FA21987487A1F56B2CEA40686E3DBAC0529A82D5A4F2A43A16A34E490FAB
+            6BCF724569FB92A653A20B2D35A9AF8F27A36FAF738AD2C6C6EF105D7029BD42
+            D61CFDB83A13D17964E8FA773A45ED8AAF115D7886717C8F7C1EA26367D0BD8E
+            9DD1743BE20B440B90A1E65DB28B111D3383EE766E8F5EB42D3E45B410192E47
+            E67D723DD695888E95413F33D81ABD6A4BD4D873304B73F6191F047A8CEB111D
+            23C307D81CBD6C53BC8768613268DEBEE467E57ADF5B103D768677D0C2CC4351
+            1B41BFF6245AA00C9ABBD704D3A8E97DEE44F498195E8726851CAD879A7B0F34
+            7F3FCABC9CE61EEF47F4581934B3BF0EDC9C6AEF3DD01CBEE6F1174A7FE75144
+            8F91A1CACC7E2BAD8E9A7B0F348F3F68665E7B1F9E42F4BE19163ABEA3DA7B0F
+            3497AFF9FCF9E96DCF237A9F0CC33E0339AABDF740F3F99AD39F4D7F7E05D1DF
+            CD30D699FD56D2ABF0BB112D6806CDE9EB55F8867873C9DB6A98C8CC7E2BD5DE
+            7BA079FD9A33FBA5F7211CD5DE7B504B2766F65B490B7935A285EEA2EC9F4538
+            D282D6DC7B90A5B333FBAD5473EF41A9CECFECB752CDBD078B31EE892447A7A2
+            D64CDE28A67266BF956AEE3D18C654CFECB752CDBD07833431B3DF4A35F71E44
+            34B33FF6FF49831B5CCDBD07733539B3DF4A35F71E48D333FBAD546BEF412F66
+            F65B297BEF41AF66F65B296BEF412F67F65BA974EF41AF67F65B69B17B0F3CB3
+            DF50A3EE3DF0CC7E830DBBF7C033FB0DB7D0DE03CFECF7A0A5ED3DF0CC7E8FD2
+            DE030D6CEACE9E7EAF9F7EE1B267F69D73CE39E79C73CE39E79C73CE39E79C73
+            CE39E79C73CE39E79C73CE39E79C73CE39E79C73CE39D7C16666FE058B440075
+            201FA2330000000049454E44AE426082}
+          FileName = 'C:\OUTROS\DELPHI MOBILE\INSS RAPIDO\trunk\images\salvar_128.png'
+        end>
+      Align = Right
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 250.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lbl_Titulo_Top: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 201.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Cadastro de Usu'#225'rio'
+      TabOrder = 2
+    end
+  end
+  object rect_Foto_e_Resumo: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Position.Y = 50.000000000000000000
+    Sides = [Bottom]
+    Size.Width = 300.000000000000000000
+    Size.Height = 135.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.500000000000000000
+    object circl_Foto_Usuario: TCircle
+      Align = Left
+      Margins.Top = 10.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object lbl_Editar_Foto: TLabel
+        Align = Bottom
+        StyledSettings = [Family, Style]
+        Margins.Bottom = -20.000000000000000000
+        Position.Y = 103.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.FontColor = xFFC3C0C0
+        TextSettings.HorzAlign = Center
+        Text = 'EDITAR FOTO'
+        TabOrder = 0
+      end
+    end
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 187.000000000000000000
+      Size.Height = 135.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Layout2: TLayout
+        Align = Top
+        Size.Width = 187.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label1: TLabel
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 182.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Nome:'
+          TabOrder = 0
+        end
+        object edt_Nome: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Position.X = 5.000000000000000000
+          Position.Y = 18.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout3: TLayout
+        Align = Top
+        Position.Y = 90.000000000000000000
+        Size.Width = 187.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 182.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Senha:'
+          TabOrder = 0
+        end
+        object edt_Senha: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Position.X = 5.000000000000000000
+          Position.Y = 18.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Layout4: TLayout
+        Align = Top
+        Position.Y = 45.000000000000000000
+        Size.Width = 187.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label3: TLabel
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 1.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 182.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'C.P.F:'
+          TabOrder = 0
+        end
+        object edt_CPF: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Position.X = 5.000000000000000000
+          Position.Y = 18.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Size.Width = 177.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object tab_Dados_Usuario: TTabControl
+    Align = Client
+    Size.Width = 300.000000000000000000
+    Size.Height = 295.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabIndex = 0
+    TabOrder = 3
+    TabPosition = None
+    Sizes = (
+      300s
+      295s
+      300s
+      295s)
+    object tab_Resumo: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tab_Resumo'
+    end
+    object tab_Endereco: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tab_Endereco'
+    end
+  end
+end
