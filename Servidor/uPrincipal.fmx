@@ -1,0 +1,66 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Servidor'
+  ClientHeight = 302
+  ClientWidth = 430
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Switch: TSwitch
+    Align = Center
+    IsChecked = True
+    TabOrder = 1
+    OnSwitch = SwitchSwitch
+  end
+  object lblStatus: TLabel
+    Align = Center
+    StyledSettings = [Family, FontColor]
+    Margins.Top = -60.000000000000000000
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Servidor Ativo'
+    TabOrder = 2
+  end
+  object ServicePooler: TRESTServicePooler
+    Active = False
+    CORS = False
+    CORS_CustomHeaders.Strings = (
+      'Access-Control-Allow-Origin=*'
+      
+        'Access-Control-Allow-Methods=GET, POST, PATCH, PUT, DELETE, OPTI' +
+        'ONS'
+      
+        'Access-Control-Allow-Headers=Content-Type, Origin, Accept, Autho' +
+        'rization, X-CUSTOM-HEADER')
+    PathTraversalRaiseError = True
+    RequestTimeout = -1
+    ServicePort = 8082
+    ProxyOptions.Port = 8888
+    AuthenticationOptions.AuthorizationOption = rdwAOBasic
+    AuthenticationOptions.OptionParams.AuthDialog = True
+    AuthenticationOptions.OptionParams.CustomDialogAuthMessage = 'Protected Space...'
+    AuthenticationOptions.OptionParams.Custom404TitleMessage = '(404) The address you are looking for does not exist'
+    AuthenticationOptions.OptionParams.Custom404BodyMessage = '404'
+    AuthenticationOptions.OptionParams.Custom404FooterMessage = 'Take me back to <a href="./">Home REST Dataware'
+    AuthenticationOptions.OptionParams.Username = 'testserver'
+    AuthenticationOptions.OptionParams.Password = 'testserver'
+    SSLMethod = sslvSSLv2
+    SSLVersions = []
+    Encoding = esUtf8
+    RootPath = '/'
+    SSLVerifyMode = []
+    SSLVerifyDepth = 0
+    ForceWelcomeAccess = False
+    CriptOptions.Use = False
+    CriptOptions.Key = 'RDWBASEKEY256'
+    MultiCORE = False
+    Left = 32
+    Top = 16
+  end
+end

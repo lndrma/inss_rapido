@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{039E81B0-8B3B-46FC-9FED-4944201234AB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Servidor\Servidor_INSS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="INSS_Rapido.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Servidor_INSS">
+        <MSBuild Projects="Servidor\Servidor_INSS.dproj"/>
+    </Target>
+    <Target Name="Servidor_INSS:Clean">
+        <MSBuild Projects="Servidor\Servidor_INSS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Servidor_INSS:Make">
+        <MSBuild Projects="Servidor\Servidor_INSS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="INSS_Rapido">
+        <MSBuild Projects="INSS_Rapido.dproj"/>
+    </Target>
+    <Target Name="INSS_Rapido:Clean">
+        <MSBuild Projects="INSS_Rapido.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="INSS_Rapido:Make">
+        <MSBuild Projects="INSS_Rapido.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Servidor_INSS;INSS_Rapido"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Servidor_INSS:Clean;INSS_Rapido:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Servidor_INSS:Make;INSS_Rapido:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
