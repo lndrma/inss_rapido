@@ -33,6 +33,7 @@ type
     rect_bg_bottom_login: TRectangle;
     lblCadastre_se: TLabel;
     procedure rect_btn_cadastrarClick(Sender: TObject);
+    procedure rect_btn_entrarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,11 +47,16 @@ implementation
 
 {$R *.fmx}
 
-uses Biblioteca, uCadastroUsuario;
+uses Biblioteca, uCadastroUsuario, uPrincipal;
 
 procedure TFrmLogin.rect_btn_cadastrarClick(Sender: TObject);
 begin
    AbriTela(TFrmCadUsuario,FrmCadUsuario);
+end;
+
+procedure TFrmLogin.rect_btn_entrarClick(Sender: TObject);
+begin
+   AbriTela(TFrmPrincipal,FrmPrincipal);
 end;
 
 end.

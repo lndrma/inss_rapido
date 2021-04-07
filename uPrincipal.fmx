@@ -1,0 +1,252 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 300
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rect_content: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 300.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 300.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ol'#225', UserName'
+        TabOrder = 0
+      end
+      object Rectangle1: TRectangle
+        Align = Right
+        Fill.Color = claWhite
+        Position.X = 250.000000000000000000
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = Rectangle1Click
+        object Image1: TImage
+          MultiResBitmap.Height = 128
+          MultiResBitmap.Width = 128
+          MultiResBitmap = <
+            item
+              Width = 128
+              Height = 128
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+                CB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                03DA49444154785EEDDDBB8F0D611CC6F14564DDB268E915121121442DE25250
+                A2A3A7C69FA0504854FE02A588C425D149C42D3444A2752D24080A5997E7B7F3
+                62C35CCE397B7EFB9E797FDF4FF2E49DD3EDCEFB64E6ECBC33B3530000000000
+                0063765879A0CC2A3F496BDE29179419A5082794BA5F94B4E7BE32ADB85A9646
+                2F2B955BCA8AB94F18C646E58D62474E374BD3E86587B2AEDAC408F6A4D18D77
+                0156A711A371DF7FDE05C084A300C15180E07217E0A6B224700E28597104088E
+                0204470182A300C15180E028405E5DFB7F6D1ADD5080BC36A5B1C98634BAA100
+                79AD4F6313F755540A101C05088E02044701F27A9CC62677D3E8860204470182
+                A300C15180BCECF6EF36F61C852B0A90D7B33436799A46371420AF17CA956AF3
+                3F9F944BD5A61F0A90DF71E55AB5F9C74BE5A0F26AEE538FED57FE7DE4697E6E
+                28A86C518E297B15F747C2160B0598709C0282A300C15180E02840701420380A
+                101C05980C479527CA77C5DE0A725E59A3F41ED701BA9D52EAF6CD3DA5F76F57
+                A100ED6C82BF2875FBC6E25E024E0179ED5256559BB5762AF608BD5B0928C0E4
+                732D0105C8CB0EF15FABCD566E25A000797D504E579B9DDC4F071EF8123898B3
+                4ADDFEA94BAFFE3AA000832BB204146038C59580020CAFA8125080D11453020A
+                30BA224A400116A6F725A0000BD7EB125080F1E86D0926B50047145B7FFFA1D4
+                FD5C7DCF67A5EB055473225E0A3EA95C56B62AF6C2E612D93F9AB0E70E3B5F33
+                17AD0076683C576D16CFFE1FD4D56AB359B40274ADBF97667B1A1BB11A185CB4
+                02D837E441D6DF4BF1288D8DA2156098F5F7BEB33B8C0F559BCD229E022E2ABF
+                6FC3B63F034B64379A6E563ECE7DCA880B41E3C185A0C0B8141C188B4181F57E
+                F20D05184D11936F28C0F08A997C43018653D4E41B0A30B8E226DF5080C11439
+                F9860274B3FB13EAF64D5D7A35F98602B4B3C96C7B3FC0FCB84C3ECBC1790D7A
+                7FC27D659F628B59634501269FDBE41B0A90971DD6DBEE4F709D7C4301F2B289
+                3D536DFEC77DF217035F0207C36BE29007A780E02840701420380A101C05088E
+                0204470182A30093E1F7FB0AEC42D05B850B418134DD0F704759AEF41A0568D7
+                753FC009C515A780BCBAEE07D89346371420AF95696CE2FE3D800204470182A3
+                00C15180BCB6A5B1C9EE34BAA100C15180E02840701420AF6F696C626B03AE28
+                405ECFD3D8E47D1ADD5080BC6C1DA0CDEB34BAA10093CD16845C5180E0284070
+                1420380A105CEE02D8D3AFFFDE051329D795AC380204470182A300C17917A0EB
+                4A17DAB9EF3FEF023C547AFD8A93CC6EA7B1D7ECDEF6BA6FC0A43DF68EA069A5
+                0887153B1ACC2A75BF2CF99B77CA0565460100000000001893A9A95F6360D7EF
+                BDF51CB50000000049454E44AE426082}
+              FileName = 'E:\delphi\Projetos\inss\inss_rapido.git\trunk\images\logout.png'
+            end>
+          Align = Center
+          Locked = True
+          Size.Width = 25.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Layout2: TLayout
+      Align = Center
+      Size.Width = 219.000000000000000000
+      Size.Height = 332.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object rect_btn_clientes: TRectangle
+        Fill.Color = claWhite
+        Size.Width = 100.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = rect_btn_clientesClick
+        object lbl_btn_clientes: TLabel
+          Align = Center
+          AutoSize = True
+          Locked = True
+          Size.Width = 42.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Clientes'
+          TabOrder = 0
+        end
+      end
+      object Rectangle3: TRectangle
+        Fill.Color = claWhite
+        Position.X = 119.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        object Label3: TLabel
+          Align = Center
+          AutoSize = True
+          Size.Width = 53.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Processos'
+          TabOrder = 0
+        end
+      end
+      object Rectangle4: TRectangle
+        Fill.Color = claWhite
+        Position.Y = 117.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        object Label4: TLabel
+          Align = Center
+          AutoSize = True
+          Size.Width = 66.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Pagamentos'
+          TabOrder = 0
+        end
+      end
+      object Rectangle5: TRectangle
+        Fill.Color = claWhite
+        Position.X = 119.000000000000000000
+        Position.Y = 117.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        object Label5: TLabel
+          Align = Center
+          AutoSize = True
+          Size.Width = 31.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Ajuda'
+          TabOrder = 0
+        end
+      end
+      object Rectangle6: TRectangle
+        Fill.Color = claWhite
+        Position.Y = 233.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        object Label6: TLabel
+          Align = Center
+          AutoSize = True
+          Size.Width = 68.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Documentos'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object rect_toolBar_top: TRectangle
+    Align = MostTop
+    Fill.Color = xFFEDEDED
+    Sides = [Bottom]
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.500000000000000000
+    object img_Voltar: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap = <
+        item
+          Width = 128
+          Height = 128
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+            CB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            025449444154785EEDDD676E1441148551034B616D04DB9B20E760831039A7BD
+            B028C36DB0250BD54885CB427AD5E7489F087FEF33023CD3B305000000000000
+            00000000009475EEF0474EE6493A9F7EFCFE15ABF234FD3C6C77F90DD663F9CA
+            3F1ADF11AC4C6BFCA3761213DB4FADE18FE70826D533FED241720493D94BADB1
+            37B51CC1766202FF3AFE518E60028F536BDCDE9E258A1A1DFF793A9328E8516A
+            8DDA9BF10B1B1DFF45327E510F536BD4DE5E26E31765FC157B905AA3F6F62A19
+            BF28E3AFD8FDD41AB537E317363AFEEB64FCA2EEA5D6A8BDBD49C62FCAF82B76
+            37B546EDED6D327E51A3E3BF4B671305DD49AD517B337E61C65FB1DBA9356A6F
+            EF93F18B1A1DFF43327E51B7526BD4DE8C5FD8E8F81F93F18BBA995AA3F666FC
+            C246C7FF948C5FD48DD41AB537E317363AFEE764FCA2AEA7D6A8BD19BFB0D1F1
+            BF24E317752DB546ED6D19DFD3518A1A1DFF6B327E5157536BD4DEBE25E31765
+            FC15BB925AA3F666FCC246C7FF9E8CBFC11AFE19E4357C13F0A700FE12882320
+            FC47108E80D3F966902328CE1130FC8210DF169E802360F845A15E1D340147C0
+            F01B43BC4278028E80E137877A97D0041C01C30F88F04EE1093802861F12E569
+            211370040C3F28D243A326E008187E58B42398C0691C81979D1737FA81119E1F
+            3C0147C0F08746798CFC041C01C31F1CE9A36426E00818FEF0689F283681D123
+            583E4798E24E7A0407E94262027BA935F2A696F12F2626D27B04CBF8971213DA
+            4FADD18F5AC6BF9C98D8A62358C6DF4EACC093F4F701EC2456E4F811187FA596
+            23D8FDF353000000000000000000000080FF696BEB177D7D765362E94B2F0000
+            000049454E44AE426082}
+          FileName = 'C:\OUTROS\DELPHI MOBILE\INSS RAPIDO\trunk\images\volta_128.png'
+        end>
+      Align = Left
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object lbl_Titulo_Top: TLabel
+      Align = Contents
+      StyledSettings = [Family, FontColor]
+      Size.Width = 300.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'INSS R'#225'pido'
+      TabOrder = 2
+    end
+  end
+end

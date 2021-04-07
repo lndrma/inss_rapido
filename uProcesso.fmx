@@ -1,0 +1,243 @@
+object FrmProcesso: TFrmProcesso
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 300
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object rect_bottom: TRectangle
+    Align = MostBottom
+    Fill.Color = xFFEDEDED
+    Position.Y = 430.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object GridPanelLayout1: TGridPanelLayout
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = rect_btn_tela_incial
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = rect_btn_novo
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object rect_btn_tela_incial: TRectangle
+        Align = Client
+        Fill.Color = xFFEDEDED
+        Size.Width = 150.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object lbl_inicio: TLabel
+          Align = Center
+          AutoSize = True
+          StyledSettings = [Family, Size, FontColor]
+          Locked = True
+          Size.Width = 31.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.WordWrap = False
+          Text = 'In'#237'cio'
+          TabOrder = 0
+        end
+      end
+      object rect_btn_novo: TRectangle
+        Align = Client
+        Fill.Color = xFFEDEDED
+        Size.Width = 150.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object lbl_novo: TLabel
+          Align = Center
+          AutoSize = True
+          StyledSettings = [Family, Size, FontColor]
+          Locked = True
+          Size.Width = 31.000000000000000000
+          Size.Height = 16.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.WordWrap = False
+          Text = 'Novo'
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object rect_content: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 300.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 348.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        300s
+        348s
+        300s
+        348s)
+      object tabItem_lista_completa: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tabItem_lista_completa'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 300.000000000000000000
+          Size.Height = 348.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+      object tabItem_item_detalhe: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'tabItem_item_detalhe'
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+      end
+    end
+    object layout_buscar: TLayout
+      Align = Top
+      Size.Width = 300.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object edt_buscar: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Size.Width = 268.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = ' Buscar...'
+      end
+      object btn_buscar: TSpeedButton
+        Align = Right
+        Position.X = 268.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'searcheditbutton'
+        Text = 'btn_buscar'
+      end
+    end
+  end
+  object rect_toolBar_top: TRectangle
+    Align = Top
+    Fill.Color = xFFEDEDED
+    Sides = [Bottom]
+    Size.Width = 300.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.500000000000000000
+    object img_Voltar: TImage
+      MultiResBitmap.Height = 128
+      MultiResBitmap.Width = 128
+      MultiResBitmap = <
+        item
+          Width = 128
+          Height = 128
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000080000000800806000000C33E61
+            CB000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            025449444154785EEDDD676E1441148551034B616D04DB9B20E760831039A7BD
+            B028C36DB0250BD54885CB427AD5E7489F087FEF33023CD3B305000000000000
+            00000000009475EEF0474EE6493A9F7EFCFE15ABF234FD3C6C77F90DD663F9CA
+            3F1ADF11AC4C6BFCA3761213DB4FADE18FE70826D533FED241720493D94BADB1
+            37B51CC1766202FF3AFE518E60028F536BDCDE9E258A1A1DFF793A9328E8516A
+            8DDA9BF10B1B1DFF45327E510F536BD4DE5E26E31765FC157B905AA3F6F62A19
+            BF28E3AFD8FDD41AB537E317363AFEEB64FCA2EEA5D6A8BDBD49C62FCAF82B76
+            37B546EDED6D327E51A3E3BF4B671305DD49AD517B337E61C65FB1DBA9356A6F
+            EF93F18B1A1DFF43327E51B7526BD4DE8C5FD8E8F81F93F18BBA995AA3F666FC
+            C246C7FF948C5FD48DD41AB537E317363AFEE764FCA2AEA7D6A8BD19BFB0D1F1
+            BF24E317752DB546ED6D19DFD3518A1A1DFF6B327E5157536BD4DEBE25E31765
+            FC15BB925AA3F666FCC246C7FF9E8CBFC11AFE19E4357C13F0A700FE12882320
+            FC47108E80D3F966902328CE1130FC8210DF169E802360F845A15E1D340147C0
+            F01B43BC4278028E80E137877A97D0041C01C30F88F04EE1093802861F12E569
+            211370040C3F28D243A326E008187E58B42398C0691C81979D1737FA81119E1F
+            3C0147C0F08746798CFC041C01C31F1CE9A36426E00818FEF0689F283681D123
+            583E4798E24E7A0407E94262027BA935F2A696F12F2626D27B04CBF8971213DA
+            4FADD18F5AC6BF9C98D8A62358C6DF4EACC093F4F701EC2456E4F811187FA596
+            23D8FDF353000000000000000000000080FF696BEB177D7D765362E94B2F0000
+            000049454E44AE426082}
+          FileName = 'C:\OUTROS\DELPHI MOBILE\INSS RAPIDO\trunk\images\volta_128.png'
+        end>
+      Align = Left
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = img_VoltarClick
+    end
+    object lbl_Titulo_Top: TLabel
+      Align = Contents
+      StyledSettings = [Family, FontColor]
+      Locked = True
+      Size.Width = 300.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Processos'
+      TabOrder = 2
+    end
+  end
+end

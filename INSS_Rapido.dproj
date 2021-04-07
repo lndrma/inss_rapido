@@ -7,7 +7,7 @@
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <TargetedPlatforms>37983</TargetedPlatforms>
+        <TargetedPlatforms>33883</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -35,16 +35,6 @@
     </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
         <Base_iOSSimulator>true</Base_iOSSimulator>
-        <CfgParent>Base</CfgParent>
-        <Base>true</Base>
-    </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
-        <Base_OSX32>true</Base_OSX32>
-        <CfgParent>Base</CfgParent>
-        <Base>true</Base>
-    </PropertyGroup>
-    <PropertyGroup Condition="('$(Platform)'=='OSX64' and '$(Base)'=='true') or '$(Base_OSX64)'!=''">
-        <Base_OSX64>true</Base_OSX64>
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
@@ -327,18 +317,6 @@
         <iPad_Setting29>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png</iPad_Setting29>
         <iPad_Setting58>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png</iPad_Setting58>
     </PropertyGroup>
-    <PropertyGroup Condition="'$(Base_OSX32)'!=''">
-        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;ZComponent;fmxase;DBXInterBaseDriver;ZCore;tethering;bindcompfmx;inetdb;FmxTeeUI;fmx;FireDACIBDriver;fmxdae;dbexpress;IndyCore;ZParseSql;dsnap;FireDACCommon;RESTBackendComponents;soapserver;bindengine;DBXMySQLDriver;CloudService;FireDACMySQLDriver;FireDACCommonODBC;FireDACCommonDriver;inet;bindcompdbx;IndyIPCommon;IndyIPServer;IndySystem;fmxFireDAC;ZDbc;FireDAC;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;FMXTee;soaprtl;DbxCommonDriver;ibxpress;xmlrtl;soapmidas;ibxbindings;fmxobj;rtl;DbxClientDriver;CustomIPTransport;bindcomp;ZPlain;IndyIPClient;dbxcds;dsnapxml;dbrtl;IndyProtocols;inetdbxpress;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts</VerInfo_Keys>
-        <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Base_OSX64)'!=''">
-        <DCC_UsePackage>DBXSqliteDriver;RESTComponents;ZComponent;fmxase;DBXInterBaseDriver;ZCore;tethering;DCEF_2010;bindcompfmx;inetdb;FmxTeeUI;fmx;FireDACIBDriver;fmxdae;dbexpress;IndyCore;dsnap;FireDACCommon;RESTBackendComponents;soapserver;bindengine;DBXMySQLDriver;CloudService;FireDACMySQLDriver;FireDACCommonODBC;FireDACCommonDriver;inet;bindcompdbx;IndyIPCommon;IndyIPServer;IndySystem;fmxFireDAC;ZDbc;FireDAC;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;FMXTee;soaprtl;DbxCommonDriver;ibxpress;xmlrtl;soapmidas;ibxbindings;fmxobj;rtl;DbxClientDriver;CustomIPTransport;bindcomp;IndyIPClient;dbxcds;dsnapxml;dbrtl;IndyProtocols;inetdbxpress;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0;CFBundleShortVersionString=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities;NSLocationUsageDescription=The reason for accessing the location information of the user;NSContactsUsageDescription=The reason for accessing the contacts</VerInfo_Keys>
-        <BT_BuildType>Debug</BT_BuildType>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
-    </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;RESTComponents;ZComponent;fmxase;DBXInterBaseDriver;RESTDWWizards;vclactnband;ZCore;vclFireDAC;ACBr_NF3e;ACBr_TEFD;ACBr_SATWS;tethering;svnui;FireDACADSDriver;ACBr_BPeDabpeESCPOS;ACBr_BPe;ACBr_MDFeDamdfeRL;DCEF_2010;ACBr_EDI;vcltouch;ACBr_NFe;ACBr_ONE;vcldb;bindcompfmx;svn;ACBr_NFeDanfeFR;inetdb;ACBr_NFeDanfeESCPOS;CEF4Delphi;ACBr_Diversos;ACBr_GNREGuiaFR;FmxTeeUI;ACBr_LCDPR;fmx;FireDACIBDriver;fmxdae;vclib;frxTee26;ACBr_CTeDacteFR;ACBr_SATExtratoFR;ACBr_Ponto;dbexpress;IndyCore;ACBr_NFSeDanfseFR;RESTDWDriverFD;vclx;ZParseSql;dsnap;FireDACCommon;ACBr_SATExtratoRL;RESTBackendComponents;ACBR_DeSTDA;VCLRESTComponents;ACBr_Reinf;soapserver;ACBr_SAT;vclie;bindengine;DBXMySQLDriver;CloudService;ACBr_PAF;FireDACMySQLDriver;ACBr_SATECFVirtual;frx26;ACBr_Sintegra;FireDACCommonODBC;FireDACCommonDriver;ACBr_GNRE;RESTDWDriverRDW;ACBr_ADRCST;inet;bindcompdbx;IndyIPCommon;ACBr_TCP;ACBr_CTeDacteRL;vcl;IndyIPServer;ACBr_CTe;ACBr_SATExtratoESCPOS;frxDB26;IndySystem;ACBr_NFeDanfeRL;ACBr_PagFor;ACBr_Integrador;dsnapcon;ACBre_Social;FireDACMSAccDriver;fmxFireDAC;vclimg;ZDbc;TeeDB;FireDAC;ACBr_SPEDImportar;ACBr_SPED;ACBr_MDFe;ACBr_Comum;frxe26;ACBr_BoletoRL;FireDACSqliteDriver;FireDACPgDriver;ibmonitor;ACBr_LFD;ACBr_GNREGuiaRL;FMXTee;soaprtl;DbxCommonDriver;ACBr_CIOT;ibxpress;Tee;ACBr_NFSeDanfseRL;xmlrtl;soapmidas;ibxbindings;fmxobj;vclwinx;ACBr_OpenSSL;rtl;DbxClientDriver;CustomIPTransport;vcldsnap;SampleListViewMultiDetailAppearancePackage;ACBr_Convenio115;bindcomp;appanalytics;ZPlain;ACBr_Serial;IndyIPClient;frce;bindcompvcl;TeeUI;ACBr_BlocoX;mozila;dbxcds;VclSmp;ACBr_NFCeECFVirtual;adortl;ACBr_BoletoFR;ACBr_Boleto;ACBr_ANe;dsnapxml;ACBr_SEF2;dbrtl;IndyProtocols;inetdbxpress;ACBr_MDFeDamdfeFR;ACBr_NFSe;ACBr_NF3eDANF3eESCPOS;ACBr_MTER;RestDatawareCORE;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
@@ -407,6 +385,18 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Biblioteca.pas"/>
+        <DCCReference Include="uCliente.pas">
+            <Form>FrmCliente</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="uPrincipal.pas">
+            <Form>FrmPrincipal</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="uProcesso.pas">
+            <Form>FrmProcesso</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -430,6 +420,7 @@
                 <Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dcloffice2k260.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
                     <Excluded_Packages Name="$(BDSBIN)\dclofficexp260.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="C:\Program Files (x86)\FastReports\LibD26\dclfrxtee26.bpl">FastReport 6.0 Tee Components</Excluded_Packages>
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
@@ -1287,8 +1278,6 @@
                 <Platform value="iOSDevice32">True</Platform>
                 <Platform value="iOSDevice64">True</Platform>
                 <Platform value="iOSSimulator">True</Platform>
-                <Platform value="OSX32">True</Platform>
-                <Platform value="OSX64">True</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>

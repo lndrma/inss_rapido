@@ -163,6 +163,7 @@ object FrmLogin: TFrmLogin
           Stroke.Kind = None
           XRadius = 10.000000000000000000
           YRadius = 10.000000000000000000
+          OnClick = rect_btn_entrarClick
           object lbl_btn_entrar: TLabel
             Align = Center
             AutoSize = True
