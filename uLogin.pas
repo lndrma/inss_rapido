@@ -110,6 +110,9 @@ end;
 
 procedure TFrmLogin.ValidaLogin(usuario, senha : string);
 begin
+   if not Assigned(usuarioPrincipal) then
+      usuarioPrincipal  := TUsuario.Create;
+
    //Não deixa clicar sem preencher os campos
    if (usuario = EmptyStr) or (senha = EmptyStr) then
    begin
