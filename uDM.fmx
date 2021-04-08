@@ -1,0 +1,137 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object conn: TFDConnection
+    Params.Strings = (
+      
+        'Database=E:\delphi\Projetos\inss\inss_rapido.git\trunk\DB\inss_r' +
+        'apido.db'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    Left = 8
+    Top = 8
+  end
+  object qryvalidaLogin: TFDQuery
+    Connection = conn
+    SQL.Strings = (
+      'SELECT * FROM usuario')
+    Left = 48
+    Top = 56
+    object qryvalidaLogincodigo: TFDAutoIncField
+      FieldName = 'codigo'
+      Origin = 'codigo'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object qryvalidaLoginnome: TStringField
+      FieldName = 'nome'
+      Origin = 'nome'
+      Size = 32767
+    end
+    object qryvalidaLoginnivel_acesso: TIntegerField
+      FieldName = 'nivel_acesso'
+      Origin = 'nivel_acesso'
+    end
+    object qryvalidaLoginusuario: TIntegerField
+      FieldName = 'usuario'
+      Origin = 'usuario'
+    end
+    object qryvalidaLoginsenha: TIntegerField
+      FieldName = 'senha'
+      Origin = 'senha'
+    end
+    object qryvalidaLoginrg: TStringField
+      FieldName = 'rg'
+      Origin = 'rg'
+      Size = 32767
+    end
+    object qryvalidaLogincpf: TStringField
+      FieldName = 'cpf'
+      Origin = 'cpf'
+      Size = 32767
+    end
+    object qryvalidaLogindtNascimento: TDateField
+      FieldName = 'dtNascimento'
+      Origin = 'dtNascimento'
+    end
+    object qryvalidaLoginfoto: TBlobField
+      FieldName = 'foto'
+      Origin = 'foto'
+    end
+    object qryvalidaLoginrua: TStringField
+      FieldName = 'rua'
+      Origin = 'rua'
+      Size = 32767
+    end
+    object qryvalidaLoginbairro: TStringField
+      FieldName = 'bairro'
+      Origin = 'bairro'
+      Size = 32767
+    end
+    object qryvalidaLoginnumero: TStringField
+      FieldName = 'numero'
+      Origin = 'numero'
+      Size = 32767
+    end
+    object qryvalidaLogincomplemento: TStringField
+      FieldName = 'complemento'
+      Origin = 'complemento'
+      Size = 32767
+    end
+    object qryvalidaLogincidade: TStringField
+      FieldName = 'cidade'
+      Origin = 'cidade'
+      Size = 32767
+    end
+    object qryvalidaLoginuf: TStringField
+      FieldName = 'uf'
+      Origin = 'uf'
+      Size = 32767
+    end
+    object qryvalidaLogincep: TStringField
+      FieldName = 'cep'
+      Origin = 'cep'
+      Size = 32767
+    end
+    object qryvalidaLoginemail: TStringField
+      FieldName = 'email'
+      Origin = 'email'
+      Size = 32767
+    end
+    object qryvalidaLogintel1: TStringField
+      FieldName = 'tel1'
+      Origin = 'tel1'
+      Size = 32767
+    end
+    object qryvalidaLogintel2: TStringField
+      FieldName = 'tel2'
+      Origin = 'tel2'
+      Size = 32767
+    end
+    object qryvalidaLogincel1: TStringField
+      FieldName = 'cel1'
+      Origin = 'cel1'
+      Size = 32767
+    end
+    object qryvalidaLogincel2: TStringField
+      FieldName = 'cel2'
+      Origin = 'cel2'
+      Size = 32767
+    end
+    object qryvalidaLoginpagina: TIntegerField
+      FieldName = 'pagina'
+      Origin = 'pagina'
+    end
+    object qryvalidaLogindtCadastro: TDateField
+      FieldName = 'dtCadastro'
+      Origin = 'dtCadastro'
+    end
+  end
+end

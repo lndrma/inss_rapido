@@ -11,8 +11,6 @@ type
   TFrmPrincipal = class(TForm)
     rect_content: TRectangle;
     rect_toolBar_top: TRectangle;
-    img_Voltar: TImage;
-    lbl_Titulo_Top: TLabel;
     Layout1: TLayout;
     Label1: TLabel;
     Rectangle1: TRectangle;
@@ -28,6 +26,7 @@ type
     Rectangle6: TRectangle;
     Label6: TLabel;
     Layout2: TLayout;
+    lbl_Titulo_Top: TLabel;
     procedure rect_btn_clientesClick(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -56,6 +55,7 @@ end;
 procedure TFrmPrincipal.Rectangle1Click(Sender: TObject);
 begin
    Close;
+   FreeAndNil(usuarioPrincipal);
 end;
 
 procedure TFrmPrincipal.rect_btn_clientesClick(Sender: TObject);

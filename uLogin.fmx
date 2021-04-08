@@ -129,7 +129,7 @@ object FrmLogin: TFrmLogin
         Size.Height = 183.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object edt_cpf_login: TEdit
+        object edt_email_login: TEdit
           Touch.InteractiveGestures = [LongTap, DoubleTap]
           Align = Top
           TabOrder = 1
@@ -139,7 +139,7 @@ object FrmLogin: TFrmLogin
           Size.Width = 241.000000000000000000
           Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
-          TextPrompt = ' CPF'
+          TextPrompt = ' Email'
           StyledSettings = [Family, Style, FontColor]
         end
         object edt_senha_login: TEdit
