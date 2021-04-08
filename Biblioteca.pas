@@ -3,11 +3,13 @@ unit Biblioteca;
 interface
 
 uses
-  System.Classes, FMX.TabControl,FMX.Forms, System.SysUtils;
+  System.Classes, FMX.TabControl,FMX.Forms, System.SysUtils, classe.Usuario;
 
 procedure AbriTela(const InstanceClass: TComponentClass; var Reference);
 procedure TrocaAba(tab_itemDestino : TTabItem);
 
+var
+   usuarioPrincipal : TUsuario;
 
 implementation
 

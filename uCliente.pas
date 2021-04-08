@@ -55,7 +55,7 @@ uses Biblioteca, uPrincipal;
 procedure TFrmCliente.img_VoltarClick(Sender: TObject);
 begin
   close;
-
+  usuarioPrincipal
 end;
 
 

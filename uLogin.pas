@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Ani, FMX.Edit, FMX.Layouts,
-  FMX.Objects;
+  FMX.Objects, classe.Usuario;
 
 type
   TFrmLogin = class(TForm)
@@ -34,7 +34,9 @@ type
     lblCadastre_se: TLabel;
     procedure rect_btn_cadastrarClick(Sender: TObject);
     procedure rect_btn_entrarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
+    procedure CarregaUsuarioPrincipal;
     { Private declarations }
   public
     { Public declarations }
@@ -49,6 +51,12 @@ implementation
 
 uses Biblioteca, uCadastroUsuario, uPrincipal;
 
+procedure TFrmLogin.FormCreate(Sender: TObject);
+begin
+   if not Assigned(usuarioPrincipal) then
+      usuarioPrincipal  := TUsuario.Create;
+end;
+
 procedure TFrmLogin.rect_btn_cadastrarClick(Sender: TObject);
 begin
    AbriTela(TFrmCadUsuario,FrmCadUsuario);
@@ -56,7 +64,17 @@ end;
 
 procedure TFrmLogin.rect_btn_entrarClick(Sender: TObject);
 begin
+
+   CarregaUsuarioPrincipal;
    AbriTela(TFrmPrincipal,FrmPrincipal);
+
+end;
+
+procedure TFrmLogin.CarregaUsuarioPrincipal;
+begin
+
+    //select no banco e tals...
+    usuarioPrincipal.nome := 'leandrão';
 end;
 
 end.

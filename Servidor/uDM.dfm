@@ -5,14 +5,14 @@ object DM: TDM
   Width = 521
   object Conn: TFDConnection
     Params.Strings = (
-      'Database=decor082_sublime'
-      'User_Name=decor082_sublime'
-      'Password=5404201a'
-      'Server=192.185.215.157'
+      'Database=taJyCD3zni'
+      'User_Name=taJyCD3zni'
+      'Password=eDTmBE9yA3'
+      'Server=remotemysql.com'
       'DriverID=MySQL')
     LoginPrompt = False
-    Left = 152
-    Top = 80
+    Left = 48
+    Top = 72
   end
   object DriverDLL: TFDPhysMySQLDriverLink
     VendorLib = 

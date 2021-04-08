@@ -30,6 +30,7 @@ type
     Layout2: TLayout;
     procedure rect_btn_clientesClick(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
 
     { Private declarations }
@@ -46,6 +47,11 @@ implementation
 {$R *.fmx}
 
 uses Biblioteca, uCliente, uLogin;
+
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+begin
+   Label1.Text := 'Olá, '+ usuarioPrincipal.nome;
+end;
 
 procedure TFrmPrincipal.Rectangle1Click(Sender: TObject);
 begin

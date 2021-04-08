@@ -8,7 +8,8 @@ uses
   Biblioteca in 'Biblioteca.pas',
   uCliente in 'uCliente.pas' {FrmCliente},
   uPrincipal in 'uPrincipal.pas' {FrmPrincipal},
-  uProcesso in 'uProcesso.pas' {FrmProcesso};
+  uProcesso in 'uProcesso.pas' {FrmProcesso},
+  classe.Usuario in 'Classes\classe.Usuario.pas';
 
 {$R *.res}
 
