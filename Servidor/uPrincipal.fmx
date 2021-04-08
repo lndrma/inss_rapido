@@ -40,7 +40,7 @@ object frmPrincipal: TfrmPrincipal
         'rization, X-CUSTOM-HEADER')
     PathTraversalRaiseError = True
     RequestTimeout = -1
-    ServicePort = 8082
+    ServicePort = 8221
     ProxyOptions.Port = 8888
     AuthenticationOptions.AuthorizationOption = rdwAOBasic
     AuthenticationOptions.OptionParams.AuthDialog = True

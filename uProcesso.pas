@@ -46,8 +46,7 @@ uses Biblioteca, uPrincipal;
 
 procedure TFrmProcesso.img_VoltarClick(Sender: TObject);
 begin
-  AbriTela(TFrmPrincipal,FrmPrincipal);
-
+   AbriTela(TFrmPrincipal,FrmPrincipal);
 end;
 
 end.

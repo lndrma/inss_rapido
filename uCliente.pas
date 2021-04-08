@@ -54,7 +54,7 @@ uses Biblioteca, uPrincipal;
 
 procedure TFrmCliente.img_VoltarClick(Sender: TObject);
 begin
-   AbriTela(TFrmPrincipal,FrmPrincipal);
+  close;
 
 end;
 

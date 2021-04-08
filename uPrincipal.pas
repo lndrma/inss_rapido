@@ -49,8 +49,7 @@ uses Biblioteca, uCliente, uLogin;
 
 procedure TFrmPrincipal.Rectangle1Click(Sender: TObject);
 begin
-   AbriTela(TFrmLogin,Frmlogin);
-   FrmPrincipal.Close;
+   Close;
 end;
 
 procedure TFrmPrincipal.rect_btn_clientesClick(Sender: TObject);
