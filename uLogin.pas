@@ -66,18 +66,18 @@ end;
 procedure TFrmLogin.rect_btn_entrarClick(Sender: TObject);
 begin
    ValidaLogin(edt_email_login.Text, edt_senha_login.Text);
-   //CarregaUsuarioPrincipal;
+   CarregaUsuarioPrincipal('local');
    //AbriTela(TFrmPrincipal,FrmPrincipal);
 
 end;
 
 procedure TFrmLogin.CarregaUsuarioPrincipal(serv : String);
 begin
-NullStrictConvert := false;
+   NullStrictConvert := false;
 
    if (serv = 'local') then
    begin
-      usuarioPrincipal.codigo        := StrToInt(uDM.Form1.qryvalidaLogin.FieldByName('codigo').Value);
+      usuarioPrincipal.codigo        := uDM.Form1.qryvalidaLogin.FieldByName('codigo').AsInteger;
       usuarioPrincipal.nome          := uDM.Form1.qryvalidaLogin.FieldByName('nome').Value;
       usuarioPrincipal.nivel_acesso  := uDM.Form1.qryvalidaLogin.FieldByName('nivel_acesso').Value;
       usuarioPrincipal.usuario       := uDM.Form1.qryvalidaLogin.FieldByName('usuario').Value;

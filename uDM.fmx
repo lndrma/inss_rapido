@@ -11,24 +11,24 @@ object Form1: TForm1
   object conn: TFDConnection
     Params.Strings = (
       
-        'Database=E:\delphi\Projetos\inss\inss_rapido.git\trunk\DB\inss_r' +
-        'apido.db'
+        'Database=C:\OUTROS\DELPHI MOBILE\INSS RAPIDO\trunk\DB\inss_rapid' +
+        'o.db'
       'DriverID=SQLite')
-    Connected = True
     LoginPrompt = False
-    Left = 8
-    Top = 8
+    Left = 80
+    Top = 24
   end
   object qryvalidaLogin: TFDQuery
     Connection = conn
     SQL.Strings = (
       'SELECT * FROM usuario')
-    Left = 48
-    Top = 56
+    Left = 80
+    Top = 128
     object qryvalidaLogincodigo: TFDAutoIncField
       FieldName = 'codigo'
       Origin = 'codigo'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object qryvalidaLoginnome: TStringField
       FieldName = 'nome'
